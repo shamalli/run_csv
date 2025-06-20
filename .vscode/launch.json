@@ -1,0 +1,73 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "with no Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run_csv.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--file", "products.csv",
+            ]
+        },
+        {
+            "name": "with filter int Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run_csv.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--file", "products.csv",
+                "--where", "price>199"
+            ]
+        },
+        {
+            "name": "with filter float Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run_csv.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--file", "products.csv",
+                "--where", "rating>4.5"
+            ]
+        },
+        {
+            "name": "with filter string Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run_csv.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--file", "products.csv",
+                "--where", "brand=apple",
+            ]
+        },
+        {
+            "name": "with aggregate Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run_csv.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--file", "products.csv",
+                "--where", "brand=xiaomi",
+                "--aggregate", "rating=avg",
+            ]
+        },
+        {
+            "name": "with filter and sorting Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run_csv.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--file", "products.csv",
+                "--where", "rating>4.4",
+                "--order-by", "rating=asc",
+            ]
+        },
+    ]
+}
