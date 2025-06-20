@@ -107,7 +107,6 @@ def main():
     data = read_csv(args.file)
 
     filter_column, filter_operation, filter_value, aggregate_column, aggregate_func, sorting_column, sorting_dest = parse_input_args(args);
-    
 
     if filter_column and filter_operation and filter_value:
         data = filter_data(data, filter_column, filter_operation, filter_value)
