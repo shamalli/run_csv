@@ -1,0 +1,9 @@
+/.pytest_cache/
+
+/.vscode/
+
+/__pycache__/
+
+run_csv.bat
+
+.gitignore

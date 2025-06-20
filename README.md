@@ -1,4 +1,10 @@
 
+# CSV Tool
+
+Простой CLI-инструмент для фильтрации, агрегации и сортировки данных из CSV-файлов.
+
+## Запуск с аргументами и без
+
 # no Arguments
 python run_csv.py --file products.csv
 
@@ -16,3 +22,6 @@ python run_csv.py --file products.csv --where "brand=xiaomi" --aggregate "rating
 
 # filter and sorting
 python run_csv.py --file products.csv --where "rating>4.4" --order-by "rating=asc"
+
+## Тесты
+pytest
